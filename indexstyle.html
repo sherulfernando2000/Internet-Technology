@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <!--external css (style= "color:red;") -->
+  <link rel="stylesheet" href="assets/style.css">
+
+ <!-- &lt;!&ndash;internal css (style= "color:red;")&ndash;&gt;-->
+  <style>
+  /*
+      h2{
+        color: green;
+      }
+
+    #my-topic{
+        background: yellow;
+    }
+
+    .myclass{
+        color: #f1274a;
+    }
+
+    *{
+        font-style: italic;
+    }
+
+
+
+    [href^="https"]{
+        font-weight: bold;
+        background: deepskyblue ;
+    }
+
+    [href$=".sh/"]{
+        background: #d30303;
+    }
+
+    [href*="road"]{
+        font-family: Ebrima;
+    }
+
+    [href~="ijse"]{
+        background: yellow;
+    }
+
+    h2[id]{
+        background: #77ef77;
+    }
+
+
+    [class]{
+        color: #043d3d;
+    }
+
+    .h301[name]{
+        background: #77ef77;
+    }
+*/
+
+    /*<!--psudo class selector-->*/
+
+   /* h1:hover{
+        color:blue;
+        cursor: pointer;
+    }
+
+    h1:active{
+        color: red;
+    }
+
+    a:link{
+        color:green;
+    }
+
+    a:visited{
+        color:gray;
+    }
+
+    input:focus{
+        background: yellow;
+    }
+
+    li:first-child{
+        color: red;
+        background: yellow;
+    }
+
+    li:last-child{
+        color: darkblue;
+        background: gray;
+    }
+
+    li:nth-child(3){
+        color: green;
+        background: pink;
+    }
+
+    li:nth-last-child(3){
+        color: orangered;
+    }
+*/
+
+  /*li:nth-child(odd){
+      color:hotpink;
+      background: lightpink;
+  }*/
+
+  /*li:nth-child(even){
+      color:hotpink;
+      background: lightpink;
+  }*/
+
+  /*li:nth-child(n+4){
+      color:hotpink;
+      background: lightpink;
+  }*/
+
+  /*li:nth-child(3n-1){
+      color:hotpink;
+      background: lightpink;
+  }*/
+
+  /*li:nth-child(3n+1){
+      color:hotpink;
+      background: lightpink;
+  }*/
+
+  li:nth-child(4n){
+      color:hotpink;
+      background: lightpink;
+  }
+
+  p::first-letter{
+      font-size: 24px;
+      font-weight:bold ;
+      color: red;
+  }
+
+  h1::before,after{
+      content:"IJSE ";
+  }
+
+  p::first-line{
+      background: aqua;
+  }
+
+  input::placeholder{
+      color: orangered;
+
+  }
+
+
+  input[type = "file"]::file-selector-button{
+      background: #d70631;
+  }
+
+  ::selection{
+      background: aqua;
+  }
+
+  li::marker{
+     content: "+";
+  }
+
+  h1:hover::before{
+      background: aqua;
+  }
+
+
+
+
+
+
+
+
+  </style>
+
+
+</head>
+<body>
+  <!--inline css (style= "color:red;") -->
+  <h1 >IJSE - Institute of Software Engineering</h1>
+  <h2 id="sf">#1 Software Engineering Institute in <span>Sri Lanka</span></h2>
+
+  <!--idselector-->
+  <h2 id ="my-topic">Sherul dhanushka</h2>
+  <h3> Maggona</h3>
+
+ <p class="myclass">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam atque consequatur eaque error fugit hic officia praesentium repudiandae sit tenetur? Doloribus, ea expedita magni nisi quaerat qui quo sequi voluptates?
+ </p>
+
+  <p class="myclass">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam atque consequatur eaque error fugit hic officia praesentium repudiandae sit tenetur? Doloribus, ea expedita magni nisi quaerat qui quo sequi voluptates?
+  </p>
+
+  <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam atque consequatur eaque error fugit hic officia praesentium repudiandae sit tenetur? Doloribus, ea expedita magni nisi quaerat qui quo sequi voluptates?
+  </p>
+
+  <a href="https://www.ijse.lk/">IJSE 1</a><br>
+  <a href="https://www. ijse  .lk/">IJSE 2</a><br>
+  <a href="http://roadmap.sh/">ABC</a><br>
+
+    <h3 class="h301" name="ijse">Hi</h3>
+    <h3 class="h301" name="ij">Hi</h3>
+
+    <a href="https://sirasatv.lk">Sirasa tv</a><br>
+    <a href="https://hirutv.lk">Hiru tv</a><br>
+    <a href="https://supremetv.lk">Supreme tv</a><br>
+
+<input type="text" placeholder="enter your name">
+  <input type="file" id ="file">
+
+<ul>
+    <li>A</li>
+    <li>B</li>
+    <li>C</li>
+    <li>D</li>
+    <li>E</li>
+</ul>
+
+
+    <div>
+        background
+    </div>
+
+
+
+</body>
+</html>

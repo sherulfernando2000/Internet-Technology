@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=New+Amsterdam&display=swap" rel="stylesheet">
+  <style>
+
+      /* 0,0,0,0  */
+    *{
+      color: red;
+    }
+
+    /* 0,0,1,0 */
+    button{
+      color: yellow;
+    }
+
+
+    /* 0,1,0,0 */
+    .btn{
+      color: green!important;
+    }
+
+    /* 1,0,0,0 */
+    #button{
+      color: orange;
+    }
+
+
+      /* 0,0,1,1 */
+      ul>li:first-child{
+          color: red;
+      }
+
+      /* 0,0,0,2 */
+      ul>li{
+          color: hotpink;
+      }
+
+      li::marker{ /* put @ infront of the all list items*!*/
+          content:"@";
+          color: #14d706;
+      }
+
+      #p1{
+          font-family: "New Amsterdam", sans-serif;
+          font-weight: 400;
+          font-style: normal;
+      }
+
+
+  </style>
+</head>
+<body>
+
+<button id="button" class="btn" style="color: darkblue">click me</button>
+
+
+<ul>
+    <li>java</li>
+    <li>python</li>
+    <li>css</li>
+</ul>
+<p id="p1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa ea enim excepturi exercitationem explicabo illum laborum laudantium nisi, odio odit officia, provident ratione rem repellendus sapiente soluta ullam ut velit!</p>
+</body>
+</html>

@@ -6,13 +6,27 @@
     <meta name="description" content="this is the description">
     <meta name="keyword" content="java,html,css,js,go,python,react">
     <meta name="aurthor" content="sheruldhanushka ">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type ="image/x-icon" href="assets/maintenance chart.jpeg">
+
+    <!--external css (style= "color:red;") -->
+    <link rel="stylesheet" href="assets/style.css">
+
+    <!--internal css (style= "color:red;")-->
+    <style>
+        h2{
+            color: green;
+        }
+    </style>
+
 </head>
+
 <body>
-<h1>IJSE - Institute of Software Engineering</h1>
+<!--inline css (style= "color:red;") -->
+<h1 style="color: red;">IJSE - Institute of Software Engineering</h1>
 <h2>#1 Software Engineering Institute in <span>Sri Lanka</span></h2>
 <h2>Sherul dhanushka</h2>
+<h3> Maggona</h3>
 <!--nesting element--> <!-- em -emphosis -->
 <em> JAVA</em><em> PYTHON</em><em> GO</em>
 <p>Java</p> <p>PYTHON</p> <P>GO</P>
@@ -33,7 +47,10 @@
         }
     </code>
 </pre>
-< marquee>Hi </marquee>
+<center> Hi</center>
+
+<marquee>Hi </marquee>
+
 
 <table border="1">
     <thead>
@@ -154,3 +171,343 @@
     </tbody>
 
 </table>
+
+<!--image
+<img src="assets/images/large.jpg" alt="Logo" title="apple iphone " > -->
+
+<!--picture-->
+<picture>
+    <source  media="(min-width: 1000px)" srcset="assets/images/large.jpg">
+    <source media="(min-width: 800px)" srcset="assets/images/medium.jpg">
+    <img src="assets/images/small.jpg" alt="Logo" title="apple iphone">
+</picture>
+
+<iframe id="inlineFrameExample" src="http://ijse.lk"></iframe>
+
+<!--video-->
+<video src="assets/videos/car.mp4"
+       muted
+       autoplay
+       loop
+       controls
+       poster="assets/images/adven.jpeg"
+      >
+    <source src="assets/videos/car.mp4" type="video/mp4">
+    <source src="assets/videos/car.webm" type="video/webm">
+    <track label="English" kind="subtitles" src="assets/videos/subtitles/sample.vtt" srclang="en">
+    <track label="Arabic" kind="subtitles" src="assets/videos/subtitles/arabic.vtt" srclang="ar">
+
+</video>
+
+<audio controls >
+    <source src="assets/audios/audio_file1.mp3" type="audio/mp3">
+</audio>
+
+<!--form-->
+<form>
+    <!--text input-->
+    <input type="text" >
+    <br>
+    <br>
+
+    <!--password input-->
+    <input type="password">
+    <br>
+    <br>
+
+    <!--Email input-->
+    <input type="email">
+    <br>
+    <br>
+
+    <!--Button input-->
+    <input type="button" value="click">
+    <br>
+    <br>
+
+    <!--checkbox input-->
+    <input type="checkbox" >
+    <br>
+    <br>
+
+    <!--radio button-->
+    <input type="radio">
+    <br>
+    <br>
+
+    <!--color button-->
+    <input type="color">
+    <br>
+    <br>
+
+    <!--date & time picker-->
+    <input type="datetime-local">
+    <br>
+    <br>
+
+    <!--date picker-->
+    <input type="date" max="2024-07-13">
+    <br>
+    <br>
+
+    <!--month picker-->
+    <input type="month">
+    <br>
+    <br>
+
+    <!--time picker-->
+    <input type="time">
+    <br>
+    <br>
+
+    <!--number input-->
+    <input type="number">
+    <br>
+    <br>
+
+    <!--url input-->
+    <input type="url">
+    <br>
+    <br>
+
+    <!--tel-->
+    <input type="tel">
+    <br>
+    <br>
+
+    <!--search-->
+    <input type="search">
+    <br>
+    <br>
+
+    <!--range picker-->
+    <input type="range">
+    <br>
+    <br>
+
+    <!--choose file input-->
+    <input type="file">
+    <br>
+    <br>
+
+    <!--choose file input-->
+    <input type="image" src="assets/images/small.jpg">
+    <br>
+    <br>
+
+    <!--hidden input-->
+    <input type="hidden">
+    <br>
+    <br>
+
+    <!--reset-->
+    <input type="reset">
+    <br>
+    <br>
+
+    <!--submit-->
+    <input type="submit">
+    <br>
+    <br>
+
+    <!-- ////////////////// label /////////// -->
+    <label for="first-name">First Name</label>
+    <input type="text" id="first-name">
+    <br>
+
+    <label for="last-name">Last Name</label>
+    <input type="text" id="last-name" placeholder="input last name">
+    <br>
+    <br>
+
+    <label for="message">Message</label>
+    <textarea
+            placeholder="Enter your message"
+            id="message"
+            rows="10"
+            cols="10"></textarea>
+    <br><br>
+    <label for="select">Java platforms</label>
+    <select id="select">
+        <option value="p1">Java SE</option>
+        <option value="p2">Java EE</option>
+        <option value="p3">Spring boot</option>
+        <option value="p4">GO</option>
+        <option>NodeJS</option>
+
+    </select>
+
+</form>
+
+<h1>STUDENT FORM</h1>
+<form action="test.html" method="post">
+<label for="first-name">First Name</label>
+<input type="text" name="fName" id="first-name">
+<br>
+
+<label for="last-name">Last Name</label>
+<input type="text" name="lName" id="last-name" placeholder="input last name">
+<br>
+<br>
+
+<label for="message">Message</label>
+<textarea name="message"
+        placeholder="Enter your message"
+        id="message"
+        rows="10"
+        cols="10"></textarea>
+<br><br>
+<label for="select">Java platforms</label>
+<select id="select" name="javaPlatform">
+    <optgroup label="Backend tech">
+    <option value="p1">Java SE</option>
+    <option value="p2">Java EE</option>
+    <option value="p3">Spring boot</option>
+    <option value="p4">GO</option>
+    <option>NodeJS</option></optgroup>
+
+    <optgroup label="Frontend tech">
+        <option value="p1">JavaScript</option>
+        <option value="p2">HTML & CSS</option>
+        <option value="p3">Angular</option>
+        <option value="p4">React JS</option>
+
+    </optgroup>
+
+</select>
+    <br>
+
+
+    <fieldset>
+        <legend>Payment Type</legend>
+        <br>
+        <input type="radio" id="oneTimePayment" name="paymentType" value="OTP">
+        <label for="oneTimePayment">One time Payment</label>
+        <br>
+        <input type="radio" id="MonthlyPayment" name="paymentType" value="MP ">
+        <label for="MonthlyPayment">Monthly Payment</label>
+    </fieldset>
+    <br>
+
+
+<!--search-->
+<input type="text" list="programmers" name="developer">
+<datalist id="programmers" >
+
+    <option value="frontend-developer">Frontend Developer</option>
+    <option value="backend-developer">Backend Developer</option>
+    <option value="backend-developer">UI/UX</option>
+</datalist>
+
+
+
+    <button type="button">click</button>
+    <button type="reset">reset</button>
+    <button type="submit">submit</button>
+
+</form>
+
+<hr>
+<form oninput="result.value=parseInt(A.value)+parseInt(B.value)">
+    <input type="number" id="A" name="A">
+    <input type="number" id="B" name="B">
+    <output name="result" for="A B">0</output>
+</form>
+
+<ol type="">
+    <li>Java</li>
+    <li>Python</li>
+    <li>C++</li>
+</ol>
+
+<ul type="disc">  <!--circle/square/disc-->
+    <li>Java</li>
+    <li>Python</li>
+    <li>C++</li>
+</ul>
+
+<dl>
+    <dt>Countries</dt> <!--description type-->
+    <dd>Sri lanka</dd>  <!--description data-->
+    <dd>India</dd>
+
+</dl>
+
+
+<ol type="">
+    <li>Java</li>
+    <li>Python</li>
+    <li>C++</li>
+   <li>Perl</li>
+    <li>Internet Technologies
+        <ol>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JS</li>
+            <ul>
+                <li>Core JavaScript</li>
+                <li>Core JavaScript</li>
+                <li>Core JavaScript</li>
+                <li>Core JavaScript</li>
+            </ul>
+            <li>UI/UX</li>
+
+        </ol>
+
+    </li>
+
+
+
+
+
+    </dl>
+</ol>
+
+
+
+<!--07/27-->
+<!--anchor tag / href = hyperlinks reference -->
+
+<a href ="https://olympics.com/en/paris-2024">Go to olympics</a>
+
+<h3>Table of content</h3>
+<ul>
+    <li>
+        <a href="">Home</a>
+    </li>
+    <li>
+        <a href="page1.html">Intoduction</a>
+        <ul>
+            <li>Networking</li>
+            <li><a href="page1.html#Internet"> Internet</a></li>
+            <li><a href="page1.html#Internet Histroy"> Internet History</a></li>
+        </ul>
+    </li>
+    <li>
+        <a href="pages/page2.html">HTML Basics</a>
+        <ul>
+            <li><a href="pages/page2.html">Html table</a> </li>
+            <li><a href="pages/page2.html#Html form"> Html form </a></li>
+            <li><a href="pages/page2.html#html multimedia"> Html multimedia</a></li>
+        </ul>
+    </li>
+</ul>
+
+<a href="mailto:sherul.dhanushka@gmail.com">Mail us</a>
+<br>
+<a href="tel:+94713504196">Contact us</a>
+<br>
+<a href="assets/pdf/sherul's%20CV%20%20(2).pdf"download="">Go to pdf</a>
+<br><br>
+<!--embedded content-->
+<iframe src="assets/pdf/sherul's%20CV%20%20(2).pdf" allowfullscreen="true"></iframe>
+<iframe src="page1.html"></iframe>
+<br><br>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/sQoiM7i5Nqc?si=Ks7kCmR1uoaSKY7z" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+<div style="overflow:hidden;margin-left:auto;margin-right:auto;border-radius:10px;width:100%;max-width:754px;position:relative"><div style="width:100%;padding-bottom:47.48010610079575%"></div><iframe width="754" height="358" title="" src="https://snappify.com/embed/26c84a75-6c39-4d6a-b17a-403656c8d6aa?responsive=1&p=1&b=1" allow="clipboard-write" allowfullscreen="" loading="lazy" style="background:linear-gradient(120deg,#F6D365FF,#FDA085FF);position:absolute;left:0;top:0;width:100%" frameborder="0"></iframe></div>
+
+<embed src="assets/images/small.jpg" type="image/jpg">
+</body>
+
+</html>
