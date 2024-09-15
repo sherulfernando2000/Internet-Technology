@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Animation</title>
+  <style>
+    div{
+      width: 200px;
+      height: 200px;
+      background: #501254;
+      /*animation: my-animation 5s;
+        animation-iteration-count: infinite;*/
+
+        animation-name: my-animation;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        animation-direction: alternate-reverse; /* reverse, alternate */
+        animation-delay: 3s;
+        animation-play-state: running;
+
+
+    }
+
+    @keyframes my-animation {    /*key frames 2kak thiyeddi*/
+      from{
+        background: #29cfec;
+      }
+
+      to{
+        background: #d70631;
+          border-radius: 100%;
+          margin-left: 500px;
+          transform: rotate(360deg);
+
+      }
+
+    }
+
+
+    /*@keyframes my-animation {
+    0% {
+        background: blue;
+        margin-left: calc(500px/5);
+        border-radius: 100%;
+    }
+
+    25%{
+        background: #d70631;
+        tranform: rotate(360deg);
+        margin-left: calc(500px/4);
+    }
+
+    50%{
+        background: #37ff00;
+        transform: rotate(360deg);
+        margin-left: calc(500px/3);
+    }
+
+        75%{
+            background: black;
+            transform: rotate(360deg);
+            margin-left: calc(500px/2);
+        }
+
+        100%{
+            background: #e5c838;
+            transform: rotate(360deg);
+            margin-left: calc(500px/1)
+        }*/
+    }
+
+
+
+  </style>
+
+</head>
+
+<body>
+  <div></div>
+</body>
+</html>

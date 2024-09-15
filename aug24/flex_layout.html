@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        section{
+            display: flex;
+            flex-direction: column-reverse;  /* row,row-reverse,column */
+        }
+
+        section>div{
+            width: 100px;
+            aspect-ratio: 1/1;
+            background: #37ff00;
+            border: 2px solid red;
+        }
+
+        #section2{
+            width: 800px;
+            height: 600px;
+            border: #490a50 solid 2px;
+            display: flex;
+            justify-content: center;
+
+        }
+
+        #section2>div{
+            width: 100px;
+            aspect-ratio: 1/1;
+            background: #14d706;
+
+        }
+
+
+
+    </style>
+</head>
+
+
+<body>
+ <section>
+     <div>A</div>
+     <div>B</div>
+     <div>C</div>
+ </section>
+
+<section id="section2">
+    <div></div>
+    <div></div>
+    <div></div>
+</section>
+
+</body>
+</html>

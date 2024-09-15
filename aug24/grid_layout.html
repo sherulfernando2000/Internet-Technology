@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <style>
+    body>section{
+      width: 1000px;
+      height: 500px;
+      background: lightblue;
+
+      display: grid;
+      /*grid-template-columns: 1fr 1fr 1fr 1fr;*/
+      grid-template-columns: repeat(4,1fr);
+
+    }
+
+    div{
+      border: 1px solid blue;
+
+    }
+
+
+
+
+    /*
+        1       2       3       4
+        |-------|-------|-------|--------
+               |       |
+        -------|-------|-------|--------
+               |
+        -------|-------|-------|--------
+
+
+
+    */
+
+    section>div:first-child{
+      background: #37ff00;
+      grid-column: 1/3;
+    }
+
+    section>div:nth-child(3){
+      background: #044b4b;
+      grid-column: 4/5;
+      grid-row: 1/3;
+    }
+
+    section>div:nth-child(5){
+      background: #ee00ff;
+      grid-column: 2/3;
+      grid-row: 2/4;
+
+    }
+
+  </style>
+</head>
+
+<body>
+<section>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+
+  <div></div>
+<!--  <div></div>-->
+<!--  <div></div>-->
+<!--  <div></div>-->
+</section>
+
+</body>
+</html>

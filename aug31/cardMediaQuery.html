@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Card media query</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+
+
+        section{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+        }
+
+        section>div{
+            border: 1px solid red;
+
+        }
+
+        section>div>div{
+            max-width: 150px;
+            min-height: 230px;
+            color: white;
+            background-color: #262626;
+            padding: 20px;
+            text-align: center;
+            margin: 10px auto;
+            border-radius: 10px;
+        }
+
+        @media all and (max-width: 800px) {
+            section{
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+        }
+
+        @media all and (max-width: 500px) {
+            section{
+                grid-template-columns: repeat(1, 1fr);
+            }
+
+        }
+
+
+       /* section{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+        }
+
+        div{
+            width: 200px;
+            height: 250px;
+            background-color: black;
+            color: white;
+        }
+
+        @media all and (max-width: 1000px) {
+            section{
+                display: grid;
+                width: 100vw;
+                height: 100vh;
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 1fr 1fr ;
+            }
+
+        }
+
+        @media all and (max-width: 375px) {
+            section{
+                display: grid;
+                !*grid-template-columns: 1fr ;*!
+
+            }
+
+        }*/
+
+    </style>
+</head>
+
+<body>
+
+<section>
+    <div>
+        <div>
+            <h1>Card 01</h1>
+            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. A cum dolores</p>
+            <button>view</button>
+        </div>
+    </div>
+
+
+    <div>
+        <div>
+            <h1>Card 02</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A cum dolores</p>
+            <button>view</button>
+        </div>
+    </div>
+
+    <div>
+        <div>
+            <h1>Card 03</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A cum dolores</p>
+            <button>view</button>
+        </div>
+    </div>
+
+    <div>
+        <div>
+            <h1>Card 04</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A cum dolores</p>
+            <button>view</button>
+        </div>
+    </div>
+
+
+
+
+
+
+
+</section>
+
+</body>
+</html>

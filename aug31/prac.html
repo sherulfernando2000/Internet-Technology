@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+
+  <style>
+    section{
+      width: 1000px;
+      height: 600px;
+      border: black 2px solid;
+      position: relative;
+
+    }
+
+    div{
+      width: 200px;
+      height: 200px;
+      background-color: #501254;
+
+      animation-name: goSquare;
+      animation-duration: 10s;
+      animation-timing-function: ease-in;
+      animation-delay: 2s;
+      animation-iteration-count: infinite;
+      animation-direction: none;
+      animation-fill-mode: backwards;
+
+
+    }
+
+
+    @keyframes goSquare{
+      0%{
+        margin-top: 0;
+        margin-left: 0;
+      }
+
+      25%{
+
+        background-color: #e5c838;
+        margin-top: 0;
+        margin-left: 800px;
+      }
+
+      50%{
+        background-color: #d70631;
+        margin-top: 400px;
+        margin-left: 800px;
+      }
+
+      75%{
+        background-color: #37ff00;
+        margin-top: 400px;
+        margin-left: 0;
+      }
+
+      100%{
+        margin-top: 0;
+        margin-left: 0;
+      }
+
+    }
+
+  </style>
+
+</head>
+
+<body>
+<section>
+  <div>
+  </div>
+</section>
+
+
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    div{
+      width: 200px;
+      height: 200px;
+      background-color: #d70631;
+      border: #deb606 10px solid;
+
+      transition-property: all;
+      transition-duration: 3s;
+      transition-timing-function: ease-in;
+      transition-delay: 2s;
+    }
+
+    div:hover{
+      transform: rotate(360deg);
+      border-radius: 100%;
+      background-color: #501254;
+      border: black 10px solid;
+    }
+
+
+  </style>
+
+</head>
+
+<body>
+  <section>
+    <div></div>
+  </section>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;!&ndash;
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>media query</title>
+  <meta name="viewport" content="width= device-width initial-scale=1 ">
+  <style>
+    section{
+      display: grid;
+      grid-template-columns: repeat(4,1fr);
+    }
+
+    section>div{
+      border: 1px solid red;
+      padding: 20px;
+    }
+
+    section>div>div{
+      border: black 1px solid;
+      padding: 10px;
+      margin: auto;
+      max-width: 200px;
+      max-height: 300px;
+      background-color: #e5e0e0;
+      text-align: center;
+
+
+    }
+
+    @media all and (max-width: 1000px){
+      section{
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+    }
+
+    @media all and (max-width: 400px){
+      section{
+        grid-template-columns: repeat(1, 1fr);
+      }
+
+    }
+  </style>
+</head>
+
+
+<body>
+
+<section>
+  <div>
+    <div>
+      <h1>Card 01</h1>
+      <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. A cum dolores</p>
+      <button>view</button>
+    </div>
+  </div>
+
+  <div>
+    <div>
+      <h1>Card 02</h1>
+      <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. A cum dolores</p>
+      <button>view</button>
+    </div>
+  </div>
+
+  <div>
+    <div>
+      <h1>Card 03</h1>
+      <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. A cum dolores</p>
+      <button>view</button>
+    </div>
+  </div>
+
+  <div>
+    <div>
+      <h1>Card 04</h1>
+      <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. A cum dolores</p>
+      <button>view</button>
+    </div>
+  </div>
+</section>
+
+</body>
+</html>&ndash;&gt;
+-->

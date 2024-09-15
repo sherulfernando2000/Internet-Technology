@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>case 7</title>
+  <style>
+    section{
+        position: relative;
+      border: 10px solid black;
+      width: 1200px;
+      height: 600px;
+    }
+
+    div{
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        background: #d70631;
+        animation: my-animation2 10s infinite;
+        animation-direction: alternate ;
+    }
+
+
+    @keyframes my-animation2 {
+        0%{
+            background: #d70631;
+            margin-left: 0px;
+            margin-top: 0;
+        }
+
+        25%{
+            background-color: #d70631;
+            margin-bottom: 0;
+            margin-left: 1000px;
+            margin-top: 0;
+        }
+
+        50%{
+            background-color: #d70631;
+            margin-top: 400px;
+            margin-left: 1000px ;
+        }
+
+        75%{
+            background-color: #d70631;
+            margin-top: 400px;
+            margin-left: 0 ;
+        }
+
+        100%{
+            background-color: #d70631;
+            margin-top: 0;
+            margin-left: 0;
+        }
+
+    }
+
+  </style>
+
+
+</head>
+
+
+<body>
+  <section>
+    <div></div>
+  </section>
+</body>
+</html>
